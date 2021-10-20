@@ -1,0 +1,2 @@
+touch {1..20}
+ls --ignore="sqOddrm" | xargs -I{} bash -c 'if ! expr {} % 2; then rm {}; fi'
